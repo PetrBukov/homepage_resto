@@ -1,0 +1,54 @@
+/*fonts*/
+@font-face {
+    font-family: 'Aleo';
+    src: local('Aleo Regular'), local('Aleo-Regular'), url('../fonts/aleoregular.woff2') format('woff2'), url('../fonts/aleoregular.woff') format('woff'), url('aleoregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*styles*/
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #fff;
+	margin: 0;
+}
+
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 0px 10px 0px 10px;
+	background-color: grey;
+}
+.header-top {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 110px;
+}
+.header-top__logo {
+	font-size: 0px;
+	padding-right: 20px;
+}
+.main-menu {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 489px;
+    justify-content: space-between;
+}
+.main-menu__item {
+	padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Aleo Regular", "Aleo", serif;
+	font-weight: 400;
+    color: #555555;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+}
+/*pixel perfect corrections*/
+.header-top__logo img {
+	margin-left: -2px;
+}
