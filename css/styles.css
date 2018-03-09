@@ -1,11 +1,47 @@
 /*fonts*/
 @font-face {
-    font-family: 'Aleo';
-    src: local('Aleo Regular'), local('Aleo-Regular'), url('../fonts/aleoregular.woff2') format('woff2'), url('../fonts/aleoregular.woff') format('woff'), url('aleoregular.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'aleoregular';
+    src: url('../web-fonts/Aleo-Regular-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'aleobold';
+    src: url('../web-fonts/Aleo-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aleobolditalic';
+    src: url('../web-fonts/Aleo-BoldItalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aleolight';
+    src: url('../web-fonts/Aleo-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aleolightitalic';
+    src: url('../web-fonts/Aleo-LightItalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aleoitalic';
+    src: url('../web-fonts/Aleo-Italic-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'wc_mano_negra_btaregular';
+    src: url('../web-fonts/wc-mano-negra-bta.regular-webfont.woff2') format('woff2'),
+         url('../web-fonts/wc-mano-negra-bta.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /*styles*/
 * {
 	box-sizing: border-box;
@@ -13,14 +49,15 @@
 body {
 	background-color: #fff;
 	margin: 0;
+	min-height: 1800px;
 }
-
 .container {
 	max-width: 1120px;
 	margin: 0 auto;
 	padding: 0px 10px 0px 10px;
-	background-color: grey;
 }
+
+
 .header-top {
 	display: flex;
 	flex-wrap: wrap;
@@ -42,12 +79,87 @@ body {
 	padding: 10px 0px 10px 0px;
     font-size: 14px;
     line-height: 14px;
-    font-family: "Aleo Regular", "Aleo", serif;
+    font-family: "aleoregular", "Aleo Regular", "Aleo", serif;
 	font-weight: 400;
     color: #555555;
     letter-spacing: 0.07em;
     text-decoration: none;
 }
+
+
+
+.container_wide {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+.header-promo__content {
+    height: 570px;
+	background-image: url(../img/bg-header-promo.jpg);
+    background-repeat: no-repeat;
+    /*background-position: -1px 0px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.header-promo__main-header {
+	font-size: 70px;
+	font-family: 'wc_mano_negra_btaregular';
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: -0.09em;
+    position: relative;
+    top: -3px;
+    left: -6px;
+    line-height: 100px;
+}
+.header-promo__small-header {
+	font-size: 16px;
+    line-height: 16px;
+    font-family: "Aleo Regular", "Aleo", serif;
+	font-weight: 400;
+    letter-spacing: 0.04em;
+    position: relative;
+    top: 16px;
+}
+.header-promo__small-header::before {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 40px;
+    left: -68px;
+    top: 9px;
+    position: absolute;
+}
+.header-promo__small-header::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 40px;
+    right: -68px;
+    top: 9px;
+    position: absolute;
+}
+.resto-menu {
+    border-top: 4px solid #f34949;
+}
+.resto-menu__header {
+    height: 71px;
+    background-image: url("../img/resto-menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: "aleobold", "Aleo Bold", "Aleo-Bold", "Aleo", serif;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    line-height: 57px;
+    color: #fff;
+}
+.
 /*pixel perfect corrections*/
 .header-top__logo img {
 	margin-left: -2px;
